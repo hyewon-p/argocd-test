@@ -6,7 +6,7 @@ resources:
 
 images:
   - name: {{ secret.AZURE_URL }}/backend-java
-    newTag: main-20240725045346
+    newTag: main-20240725045847
 
 commonLabels:
   app: backend-java
