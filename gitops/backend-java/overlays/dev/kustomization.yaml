@@ -5,8 +5,8 @@ resources:
   - ../../base
 
 images:
-  - name: {{ secrets.AZURE_URL }}/backend-java
-    newTag: main-20240725050949
+  - name: eduazureregistry158.azurecr.io
+    newTag: main-20240725051430
 
 commonLabels:
   app: backend-java
