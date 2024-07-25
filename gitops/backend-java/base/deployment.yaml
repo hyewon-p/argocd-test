@@ -14,8 +14,6 @@ spec:
     spec:
       containers:
       - name: backend-java
-        image: eduazureregistry158.azurecr.io/backend-java:{{newTag}}
+        image: {{ secret.AZURE_URL }}/backend-java:{{ newTag }}
         ports:
         - containerPort: 8080
-      imagePullSecrets:
-      - name: test-secret
