@@ -68,7 +68,7 @@ jobs:
       run: |
         TAG="${{ github.event.inputs.name }}-${{ env.DATE_TAG }}"
         sed -i "s|newTag: .*$|newTag: $TAG|g" gitops/backend-java/overlays/dev/kustomization.yaml
-        sed -i "s|name: .*$|name: ${{ secrets.AZURE_URL }}|g" gitops/backend-java/overlays/dev/kustomization.yaml
+        sed -i "s|name: .*$|name: ${{ secrets.AZURE_URL }}/backend-java|g" gitops/backend-java/overlays/dev/kustomization.yaml
 
     - name: Commit and push changes
       run: |
